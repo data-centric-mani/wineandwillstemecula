@@ -133,7 +133,10 @@
         text-decoration: none;
         padding: 17px 44px;
         border-radius: 40px;
-        transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+        transition:
+          background 0.25s,
+          transform 0.2s,
+          box-shadow 0.25s;
         box-shadow: 0 4px 24px rgba(201, 169, 108, 0.35);
       }
 
@@ -226,8 +229,13 @@
       }
 
       @keyframes pulse {
-        0%, 100% { box-shadow: 0 0 0 3px rgba(201, 169, 108, 0.25); }
-        50% { box-shadow: 0 0 0 7px rgba(201, 169, 108, 0.1); }
+        0%,
+        100% {
+          box-shadow: 0 0 0 3px rgba(201, 169, 108, 0.25);
+        }
+        50% {
+          box-shadow: 0 0 0 7px rgba(201, 169, 108, 0.1);
+        }
       }
 
       /* ── Event Cards ── */
@@ -242,7 +250,9 @@
         border: 1px solid var(--light-border);
         border-radius: 20px;
         overflow: hidden;
-        transition: box-shadow 0.3s, transform 0.3s;
+        transition:
+          box-shadow 0.3s,
+          transform 0.3s;
         display: flex;
         flex-direction: column;
         box-shadow: 0 2px 20px rgba(42, 64, 54, 0.07);
@@ -255,7 +265,11 @@
 
       .event-card-top {
         display: block;
-        background: linear-gradient(145deg, var(--sage-mid) 0%, var(--sage-dark) 100%);
+        background: linear-gradient(
+          145deg,
+          var(--sage-mid) 0%,
+          var(--sage-dark) 100%
+        );
         color: #fff;
         padding: 40px 36px 36px;
         position: relative;
@@ -359,7 +373,9 @@
         text-decoration: none;
         padding: 14px 28px;
         border-radius: 40px;
-        transition: background 0.22s, transform 0.2s;
+        transition:
+          background 0.22s,
+          transform 0.2s;
       }
 
       .btn-reserve:hover {
@@ -717,11 +733,12 @@
     </style>
   </head>
   <body>
-
     <!-- Hero -->
     <header class="hero">
       <div class="hero-content">
-        <div class="hero-eyebrow">DeCosimo Law &nbsp;·&nbsp; Temecula Valley</div>
+        <div class="hero-eyebrow">
+          DeCosimo Law &nbsp;·&nbsp; Temecula Valley
+        </div>
         <h1>Wine &amp; <span>Wills</span></h1>
         <p class="hero-subtitle">
           Estate planning, thoughtfully made approachable — among the vines
@@ -756,16 +773,23 @@
       <div class="events-urgency">
         <span class="urgency-dot"></span>
         <span>
-          <strong>Seats are limited</strong> for both events. We keep these gatherings small so every question gets answered — register early to be sure of your place.
+          <strong>Seats are limited</strong> for both events. We keep these
+          gatherings small so every question gets answered — register early to
+          be sure of your place.
         </span>
       </div>
 
       <div class="events-grid">
-
         <!-- Event 1: Altisima Winery -->
         <div class="event-card">
-          <a href="https://decosimolaw.com/secureyourlegacy" target="_blank" class="event-card-top">
-            <span class="event-date-badge">Sat, June 20 &nbsp;·&nbsp; 11:15 AM – 1:00 PM</span>
+          <a
+            href="https://decosimolaw.com/secureyourlegacy"
+            target="_blank"
+            class="event-card-top"
+          >
+            <span class="event-date-badge"
+              >Sat, July 18 &nbsp;·&nbsp; 11:15 AM – 1:00 PM</span
+            >
             <h3>Altisima Winery</h3>
             <span class="venue">Temecula &nbsp;·&nbsp; Altisima Winery</span>
           </a>
@@ -777,44 +801,125 @@
               <li>Live Q&amp;A with Deanna and the DeCosimo Law team</li>
               <li>Estate planning workbook &amp; take-home checklist</li>
               <li>Relaxed chat with Deanna after the event</li>
-              <li>Ready for next steps? Book a private conversation to walk through your family's unique situation</li>
+              <li>
+                Ready for next steps? Book a private conversation to walk
+                through your family's unique situation
+              </li>
             </ul>
             <div class="event-actions">
-              <a href="https://decosimolaw.com/secureyourlegacy" target="_blank" class="btn-reserve">Reserve My Seat</a>
+              <a
+                href="https://decosimolaw.com/secureyourlegacy"
+                target="_blank"
+                class="btn-reserve"
+                >Reserve My Seat</a
+              >
               <button
                 class="btn-details"
-                onclick="this.closest('.event-card-body').querySelector('details').toggleAttribute('open'); this.textContent = this.closest('.event-card-body').querySelector('details').hasAttribute('open') ? 'Hide Topics' : 'See Topics';"
-              >See Topics</button>
+                onclick="
+                  this.closest('.event-card-body')
+                    .querySelector('details')
+                    .toggleAttribute('open');
+                  this.textContent = this.closest('.event-card-body')
+                    .querySelector('details')
+                    .hasAttribute('open')
+                    ? 'Hide Topics'
+                    : 'See Topics';
+                "
+              >
+                See Topics
+              </button>
             </div>
             <details class="curriculum">
               <summary></summary>
               <p class="curriculum-intro">
-                In this warm, educational workshop you'll leave with a clear picture of how a
-                thoughtfully designed estate plan protects the people and things you love most —
-                without the overwhelm.
+                In this warm, educational workshop you'll leave with a clear
+                picture of how a thoughtfully designed estate plan protects the
+                people and things you love most — without the overwhelm.
               </p>
               <ul class="curriculum-topics">
-                <li><strong>What Estate Planning Really Is</strong>Why it's more than documents — it's a comprehensive strategy to protect your loved ones, keep you in control, and minimize stress and cost for your family.</li>
-                <li><strong>Core Documents Every Plan Should Include</strong>Revocable Living Trusts, Wills, Powers of Attorney, Advance Health Care Directives, HIPAA authorizations, and more.</li>
-                <li><strong>Wills, Probate, and How They Work in California</strong>What a will actually does, how probate works, how long it takes, and why it's expensive, public, and avoidable.</li>
-                <li><strong>Why a Will Alone May Not Be Enough</strong>Drawbacks of relying solely on a will — especially for homeowners, blended families, and those who value privacy.</li>
-                <li><strong>Benefits of a Revocable Living Trust</strong>How trusts avoid probate, keep your affairs private, protect beneficiaries, and provide continuity if you become incapacitated.</li>
-                <li><strong>Protecting Your Loved Ones</strong>Strategies to shield beneficiaries from divorce, creditors, lawsuits, and poor financial decisions while supporting generational wealth.</li>
-                <li><strong>Kids Protection Plan®</strong>How to ensure minor children are cared for by the people you choose, in the way you want, without court delays.</li>
-                <li><strong>Protecting Your Pets</strong>Pet caregiver nominations, financial provisions, and Pet Trust options for long-term safety and well-being.</li>
-                <li><strong>Planning for Small Business Owners</strong>Protecting business assets, ensuring continuity, avoiding disruption, and handling succession.</li>
-                <li><strong>Community Property vs. Separate Property in California</strong>How asset characterization impacts inheritance, taxes, and distributions — especially for blended families.</li>
-                <li><strong>Powers of Attorney &amp; Health Care Directives</strong>Who steps in if you cannot make decisions, what authority they hold, and how to ensure your wishes are honored.</li>
-                <li><strong>Estate Taxes</strong>An overview of the current federal and California landscape, plus strategies to reduce or avoid taxes across generations.</li>
-                <li><strong>Trust Funding</strong>How to title assets and update beneficiary designations so your plan works when your family needs it most.</li>
-                <li><strong>How Our Planning Process Works</strong>What DeCosimo Law's Life &amp; Legacy Planning experience looks like and how it differs from a traditional, document-only firm.</li>
+                <li>
+                  <strong>What Estate Planning Really Is</strong>Why it's more
+                  than documents — it's a comprehensive strategy to protect your
+                  loved ones, keep you in control, and minimize stress and cost
+                  for your family.
+                </li>
+                <li>
+                  <strong>Core Documents Every Plan Should Include</strong
+                  >Revocable Living Trusts, Wills, Powers of Attorney, Advance
+                  Health Care Directives, HIPAA authorizations, and more.
+                </li>
+                <li>
+                  <strong
+                    >Wills, Probate, and How They Work in California</strong
+                  >What a will actually does, how probate works, how long it
+                  takes, and why it's expensive, public, and avoidable.
+                </li>
+                <li>
+                  <strong>Why a Will Alone May Not Be Enough</strong>Drawbacks
+                  of relying solely on a will — especially for homeowners,
+                  blended families, and those who value privacy.
+                </li>
+                <li>
+                  <strong>Benefits of a Revocable Living Trust</strong>How
+                  trusts avoid probate, keep your affairs private, protect
+                  beneficiaries, and provide continuity if you become
+                  incapacitated.
+                </li>
+                <li>
+                  <strong>Protecting Your Loved Ones</strong>Strategies to
+                  shield beneficiaries from divorce, creditors, lawsuits, and
+                  poor financial decisions while supporting generational wealth.
+                </li>
+                <li>
+                  <strong>Kids Protection Plan®</strong>How to ensure minor
+                  children are cared for by the people you choose, in the way
+                  you want, without court delays.
+                </li>
+                <li>
+                  <strong>Protecting Your Pets</strong>Pet caregiver
+                  nominations, financial provisions, and Pet Trust options for
+                  long-term safety and well-being.
+                </li>
+                <li>
+                  <strong>Planning for Small Business Owners</strong>Protecting
+                  business assets, ensuring continuity, avoiding disruption, and
+                  handling succession.
+                </li>
+                <li>
+                  <strong
+                    >Community Property vs. Separate Property in
+                    California</strong
+                  >How asset characterization impacts inheritance, taxes, and
+                  distributions — especially for blended families.
+                </li>
+                <li>
+                  <strong
+                    >Powers of Attorney &amp; Health Care Directives</strong
+                  >Who steps in if you cannot make decisions, what authority
+                  they hold, and how to ensure your wishes are honored.
+                </li>
+                <li>
+                  <strong>Estate Taxes</strong>An overview of the current
+                  federal and California landscape, plus strategies to reduce or
+                  avoid taxes across generations.
+                </li>
+                <li>
+                  <strong>Trust Funding</strong>How to title assets and update
+                  beneficiary designations so your plan works when your family
+                  needs it most.
+                </li>
+                <li>
+                  <strong>How Our Planning Process Works</strong>What DeCosimo
+                  Law's Life &amp; Legacy Planning experience looks like and how
+                  it differs from a traditional, document-only firm.
+                </li>
               </ul>
             </details>
           </div>
         </div>
 
         <!-- Event 2: Old Town Meeting Room Murrieta -->
-        <div class="event-card">
+        <!-- <div class="event-card">
           <a href="https://decosimolaw.com/secureyourlegacy" target="_blank" class="event-card-top">
             <span class="event-date-badge">Wed, June 24 &nbsp;·&nbsp; 6:00 – 7:30 PM</span>
             <h3>Old Town Murrieta</h3>
@@ -861,8 +966,7 @@
               </ul>
             </details>
           </div>
-        </div>
-
+        </div> -->
       </div>
     </section>
 
@@ -870,7 +974,9 @@
     <div class="expect-section">
       <section>
         <p class="section-label">The Experience</p>
-        <h2 class="section-heading">An evening that feels nothing like a law office</h2>
+        <h2 class="section-heading">
+          An evening that feels nothing like a law office
+        </h2>
         <p class="section-intro" style="margin-bottom: 48px">
           Every Wine &amp; Wills gathering is intimate, unhurried, and entirely
           pressure-free. Come curious — leave with clarity.
@@ -881,8 +987,9 @@
             <span class="expect-icon">🍷</span>
             <h4>Wine &amp; Good Company</h4>
             <p>
-              The Altisima event includes a complimentary wine tasting. All events
-              include light refreshments in a relaxed, welcoming atmosphere.
+              The Altisima event includes a complimentary wine tasting. All
+              events include light refreshments in a relaxed, welcoming
+              atmosphere.
             </p>
           </div>
           <div class="expect-item">
@@ -908,8 +1015,8 @@
             <h4>Resources to Take Home</h4>
             <p>
               Leave with a personalized planning checklist. Linger after the
-              event for a one-on-one chat with Deanna, or book a private follow-up
-              at your own pace.
+              event for a one-on-one chat with Deanna, or book a private
+              follow-up at your own pace.
             </p>
           </div>
         </div>
@@ -927,15 +1034,15 @@
               Deanna DeCosimo founded DeCosimo Law because she believes every
               family deserves an estate plan that truly works — not a stack of
               documents that sits in a drawer. She created Wine &amp; Wills to
-              make these conversations feel as natural and warm as they should be.
-              Come meet her — no briefcase required.
+              make these conversations feel as natural and warm as they should
+              be. Come meet her — no briefcase required.
             </p>
           </div>
           <div class="deanna-callout">
             <p>
               "My goal is for every family to leave with a sense of peace — not
-              overwhelm. Estate planning is one of the most loving things you can
-              do for the people you care about most."
+              overwhelm. Estate planning is one of the most loving things you
+              can do for the people you care about most."
             </p>
             <cite>— Deanna DeCosimo, Founder &amp; Attorney</cite>
           </div>
@@ -971,9 +1078,10 @@
         <div class="faq-item">
           <h4>Can I bring my spouse or partner?</h4>
           <p>
-            Please do — we warmly encourage it. Estate planning affects the whole
-            household, and couples often find the conversation most valuable when
-            they're together. Just register both names so we can save two seats.
+            Please do — we warmly encourage it. Estate planning affects the
+            whole household, and couples often find the conversation most
+            valuable when they're together. Just register both names so we can
+            save two seats.
           </p>
         </div>
 
@@ -981,8 +1089,8 @@
           <h4>Do I need to prepare anything beforehand?</h4>
           <p>
             Not at all. Simply bring yourself and any questions you've been
-            carrying. We'll provide a brief pre-event questionnaire if you'd like
-            to think ahead — but it's entirely optional.
+            carrying. We'll provide a brief pre-event questionnaire if you'd
+            like to think ahead — but it's entirely optional.
           </p>
         </div>
 
@@ -1014,12 +1122,19 @@
         <p class="section-label">Take the First Step</p>
         <h2 class="section-heading">Your family deserves this peace of mind</h2>
         <p>
-          Reserve a seat at an upcoming event or reach out to us directly.
-          We're here to help — warmly and without pressure.
+          Reserve a seat at an upcoming event or reach out to us directly. We're
+          here to help — warmly and without pressure.
         </p>
         <div class="contact-links">
-          <a href="https://decosimolaw.com/secureyourlegacy" target="_blank" class="btn-primary">Reserve My Seat</a>
-          <a href="https://decosimolaw.com" target="_blank" class="btn-outline">Visit DeCosimo Law</a>
+          <a
+            href="https://decosimolaw.com/secureyourlegacy"
+            target="_blank"
+            class="btn-primary"
+            >Reserve My Seat</a
+          >
+          <a href="https://decosimolaw.com" target="_blank" class="btn-outline"
+            >Visit DeCosimo Law</a
+          >
         </div>
       </section>
     </div>
@@ -1027,14 +1142,15 @@
     <!-- Footer -->
     <footer>
       <strong>DeCosimo Law</strong>
-      Estate Planning &amp; Elder Law &nbsp;·&nbsp; Serving Temecula Valley &amp; Southern California<br />
+      Estate Planning &amp; Elder Law &nbsp;·&nbsp; Serving Temecula Valley
+      &amp; Southern California<br />
       <a href="mailto:support@decosimolaw.com">support@decosimolaw.com</a>
       &nbsp;·&nbsp;
       <a href="https://decosimolaw.com" target="_blank">decosimolaw.com</a>
       <br /><br />
       &copy; 2026 DeCosimo Law. This event is for informational purposes only
-      and does not constitute legal advice or create an attorney-client relationship.
+      and does not constitute legal advice or create an attorney-client
+      relationship.
     </footer>
-
   </body>
 </html>
